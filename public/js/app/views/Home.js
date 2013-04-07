@@ -19,6 +19,8 @@ define(["jquery", "backbone", "collections/Blacklists", "text!templates/results.
             },
 
             checkRBLs: function(e) {
+                $('.success').removeClass('success');
+                $('.error').removeClass('error');
                 e.preventDefault();
                 if (/^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$/.test($('.search-query').val())) {
                     $('.result').each(function() {
@@ -38,7 +40,9 @@ define(["jquery", "backbone", "collections/Blacklists", "text!templates/results.
                         });
                     });
                 } else {
-                    alert ('FU');
+                    $('.results').prepend(
+                        $('<div>').addClass('alert').text('Please enter a valid IPv4 Address.')
+                    );
                 }
             }
 
