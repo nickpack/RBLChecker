@@ -1,0 +1,17 @@
+<form class="well" id="ipform">
+	<label for="IP">Enter IPv4 Address to check</label><input id="IP" type="text" class="search-query" placeholder="IP Address">
+</form>
+<table class="table table-bordered table-hover">
+	<thead>
+		<tr>
+			<th>List</th><th>URL</th><th>Result</th>
+		</tr>
+	</thead>
+	<tbody>
+	  	<% _.each(lists, function(list){ %>
+	   		<tr>
+	   			<td><%= list.get("name") %></td><td><%= list.get("endpoint") %></td><td class="result" data-endpoint="<%= list.get("endpoint") %>"><%= list.get("result") %></td>
+	   		</tr>
+	  	<% }); %>
+  	</tbody>
+</table>

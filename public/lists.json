@@ -1,0 +1,20 @@
+[
+	{ "name": "AHBL", "endpoint": "dnsbl.ahbl.org" },
+	{ "name": "ASPEWS", "endpoint": "aspews.ext.sorbs.net" },
+	{ "name": "Backscatterer", "endpoint": "ips.backscatterer.org" },
+	{ "name": "Barracuda Networks", "endpoint": "b.barracudacentral.org" },
+	{ "name": "SORBS HTTP", "endpoint": "http.dnsbl.sorbs.net" },
+	{ "name": "SORBS SOCKS", "endpoint": "socks.dnsbl.sorbs.net" },
+	{ "name": "SORBS MISC", "endpoint": "misc.dnsbl.sorbs.net" },
+	{ "name": "SORBS SMTP", "endpoint": "smtp.dnsbl.sorbs.net" },
+	{ "name": "SORBS WEB", "endpoint": "web.dnsbl.sorbs.net" },
+	{ "name": "Spamcop", "endpoint": "bl.spamcop.net" },
+	{ "name": "Spamhaus PBL", "endpoint": "pbl.spamhaus.org" },
+	{ "name": "Spamhaus SBL", "endpoint": "sbl.spamhaus.org" },
+	{ "name": "Spamhaus XBL", "endpoint": "xbl.spamhaus.org" },
+	{ "name": "Truncate", "endpoint": "truncate.gbudb.net" },
+	{ "name": "UCE Protect Level 1", "endpoint": "dnsbl-1.uceprotect.net" },
+	{ "name": "UCE Protect Level 2", "endpoint": "dnsbl-2.uceprotect.net" },
+	{ "name": "UCE Protect Level 3", "endpoint": "dnsbl-3.uceprotect.net" },
+	{ "name": "WPBL", "endpoint": "db.wpbl.info" }
+]

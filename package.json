@@ -1,0 +1,44 @@
+{
+  "name": "RBLChecker",
+  "title": "RBL Checker",
+  "description": "Express, Backbone and Require based RBL checker",
+  "version": "0.1.0",
+  "homepage": "https://github.com/nickpack/RBLChecker",
+  "author": {
+    "name": "Nick Pack",
+    "email": "nick@nickpack.com",
+    "url": "http://0xdeadfa11.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nickpack/RBLChecker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nickpack/RBLChecker/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/nickpack/RBLChecker/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "web",
+  "keywords": [
+    "Backbone.js",
+    "Require.js",
+    "RBL"
+  ],
+  "dependencies": {
+    "express": "3.x"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-requirejs": "~0.4.0",
+    "grunt-contrib-jshint": "~0.3.0",
+    "uglify-js": "~2.2.5"
+  }
+}
