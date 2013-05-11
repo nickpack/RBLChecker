@@ -17,7 +17,7 @@ server.configure(function() {
 
   }));
 
-  server.use(express.bodyParser())
+  server.use(express.bodyParser());
 
   server.use(server.router);
 
@@ -45,13 +45,13 @@ server.get('/check/:ip/:endpoint', function(req, res) {
         if (err) {
           if (err.code === 'ENOTFOUND') {
             // Not listed.
-            res.json(false);
+            res.json({ listed: false });
             return;
           } else {
-            res.json('error');
+            res.json({ 'error': 'Unable to look up address' });
           }
         }
-        res.json(addresses);
+        res.json({ 'listed': addresses });
     });
 });
 
