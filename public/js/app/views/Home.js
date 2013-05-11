@@ -29,9 +29,9 @@ define(["jquery", "backbone", "collections/Blacklists", "text!templates/results.
                           url: 'check/'+$('.search-query').val()+'/'+$(this).data('endpoint'),
                           context: this,
                           success: function (data) {
-                            if (data) {
+                            if (data.listed != false) {
                                 $(this).parent().addClass('error');
-                                $(this).html(data[0].replace( /(http:\/\/[^\s]+)/gi , '<a href="$1">$1</a>' ));
+                                $(this).html(data.listed[0].replace( /(http:\/\/[^\s]+)/gi , '<a href="$1">$1</a>' ));
                             } else {
                                 $(this).parent().addClass('success');
                                 $(this).html('Not listed');
